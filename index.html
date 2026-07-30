@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="坂ノ下 勝幸 — OpenStreetMapとWikimediaを軸に、地域の情報を未来へつなぐWebアプリ開発とコミュニティ活動。">
+  <meta name="description" content="坂ノ下 勝幸の作品・活動リンク集。OpenStreetMapとWikimediaを活用した地図アプリ、開発ツール、地域活動、記事・登壇を紹介します。">
   <meta name="theme-color" content="#f4f0e6">
   <title>坂ノ下 勝幸 | Open Data, Open Source & Community</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,9 +25,9 @@
       <span class="sr-only">メニューを開く</span>
     </button>
     <nav id="site-nav" class="site-nav" aria-label="メインナビゲーション">
-      <a href="#projects">Projects</a>
-      <a href="#activity">Activity</a>
-      <a href="#writing">Writing</a>
+      <a href="#projects">作品</a>
+      <a href="#activity">活動</a>
+      <a href="#writing">記事・登壇</a>
       <a class="nav-contact" href="#contact">Connect</a>
     </nav>
   </header>
@@ -36,11 +36,11 @@
     <section id="top" class="hero">
       <div class="topography" aria-hidden="true"></div>
       <div class="hero-copy reveal">
-        <p class="eyebrow"><span></span> Open data / Open source / Osaka</p>
-        <h1>地域の記憶を、<br><em>ひらかれた地図</em>に。</h1>
-        <p class="hero-lead">OpenStreetMapとWikimediaを軸に、誰もが使えて、参加できて、未来に残せる仕組みをつくっています。</p>
+        <p class="eyebrow"><span></span> Works & activities / K. Sakanoshita</p>
+        <h1>地図をつくる。<br><em>地域と動かす。</em></h1>
+        <p class="hero-lead">OpenStreetMapとWikimediaを活用した地図アプリ、開発ツール、地域活動のリンク集です。</p>
         <div class="hero-actions">
-          <a class="button button-primary" href="#projects">プロジェクトを見る <span aria-hidden="true">↘</span></a>
+          <a class="button button-primary" href="#link-index">リンクから探す <span aria-hidden="true">↘</span></a>
           <a class="text-link" href="https://github.com/K-Sakanoshita" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
         </div>
       </div>
@@ -65,45 +65,46 @@
       </div>
     </section>
 
-    <section id="intro" class="intro section">
-      <p class="section-index">01 — Philosophy</p>
-      <div class="intro-grid">
-        <h2 class="reveal">データを整え、<br>使える形にし、<br>みんなで育てる。</h2>
-        <div class="intro-copy reveal">
-          <p>地元の情報を自分たちで発信する文化と、現場で本当に使える道具をつくること。それが活動の中心です。</p>
-          <p>地理空間データの整備だけで終わらせず、一般の方が気軽に使えるWebアプリとして社会に届ける。開発とコミュニティの両輪で、今と未来をつなぎます。</p>
-          <div class="keyword-list" aria-label="活動領域">
-            <span>OpenStreetMap</span>
-            <span>Wikimedia</span>
-            <span>MapLibre</span>
-            <span>JavaScript</span>
-            <span>Overpass API</span>
-            <span>Community</span>
-          </div>
-        </div>
+    <section id="link-index" class="link-index section">
+      <p class="section-index">01 — Link index</p>
+      <div class="link-index-heading reveal">
+        <h2>見たいものから、<br>すぐに探す。</h2>
+        <p>作品と活動を4つの入口にまとめました。</p>
+      </div>
+      <div class="link-index-grid">
+        <a class="index-card reveal" href="#projects"><span>01</span><strong>地図アプリ</strong><small>公園・地域遺産・まち歩き</small><i>↓</i></a>
+        <a class="index-card reveal" href="#tools"><span>02</span><strong>開発ツール</strong><small>OSMの変化・編集履歴</small><i>↓</i></a>
+        <a class="index-card reveal" href="#activity"><span>03</span><strong>活動・コミュニティ</strong><small>イベント・プロフィール</small><i>↓</i></a>
+        <a class="index-card reveal" href="#writing"><span>04</span><strong>記事・登壇</strong><small>Qiita・Speaker Deck</small><i>↓</i></a>
       </div>
     </section>
 
     <section id="projects" class="projects section">
       <div class="section-heading">
         <div>
-          <p class="section-index">02 — Selected projects</p>
-          <h2>地図から始まる、<br>5つのプロジェクト</h2>
+          <p class="section-index">02 — Maps & tools</p>
+          <h2>つくったもの。</h2>
         </div>
-        <p>オープンデータを「見える」「使える」「参加できる」体験へ変える代表作。</p>
+        <p>地域を知る地図から、OpenStreetMapを使うためのツールまで。カードを選ぶと各サイトを開きます。</p>
       </div>
 
       <div class="project-grid">
-        <portfolio-project featured number="01" variant="expo" href="https://k-sakanoshita.github.io/expo2025-maniacs/" meta="Web map / 2025" tech="JavaScript · OSM · MapLibre" project-title="万博マニアックマップ" description="パビリオン、施設、入口、階層情報まで。大阪・関西万博をOpenStreetMapのデータで探索し、閉幕後も記憶を残すデジタルアーカイブ。" cta="サイトを見る"></portfolio-project>
-        <portfolio-project number="02" variant="change" href="https://armd-01.sakura.ne.jp/whatsnew/" meta="Data visualization / 2026" tech="JavaScript · PHP · MariaDB" project-title="OSM What’s New Japan" description="日本のOpenStreetMapで「どこが、どう変わったか」を地図とレポートで可視化。日々の編集から地域の変化を発見できます。" cta="サイトを見る"></portfolio-project>
-        <portfolio-project number="03" variant="viewer" href="https://k-sakanoshita.github.io/Easy_Changeset_Viewer/" meta="OSM tool / 2021—" tech="JavaScript · OSM API" project-title="Easy Changeset Viewer" description="OpenStreetMapの編集履歴を、地図を見ながら手軽に確認できるビューア。複雑な変更セットを直感的に読み解きます。" cta="アプリを使う"></portfolio-project>
-        <portfolio-project number="04" variant="community" href="https://k-sakanoshita.github.io/community_mapmaker/" meta="Framework / 2024—" tech="OSM · Google Sheets" project-title="コミュニティマップメーカー" description="OpenStreetMapとGoogleスプレッドシートを組み合わせ、地域団体が低コストで育てられるWebマップ開発フレームワーク。" cta="プロジェクトを見る"></portfolio-project>
-        <portfolio-project number="05" variant="walk" href="https://armd-02.github.io/mapmaker/" meta="Map utility / 2020—" tech="JavaScript · MapLibre" project-title="まち歩きマップメーカー" description="イベントやフィールドワーク向けに、自由に加工・利用できる地図画像をブラウザで作成するツール。" cta="地図をつくる"></portfolio-project>
+        <portfolio-project featured number="01" variant="playground" href="https://armd-02.github.io/Playgrounds" meta="Park map" tech="OSM · Wikimedia" project-title="遊具のある公園マップ" description="ブランコ、すべり台、砂場など、遊具の種類から公園を探せる地図。親子のお出かけ先選びを、オープンデータでお手伝いします。" cta="公園を探す"></portfolio-project>
+        <portfolio-project number="02" variant="heritage" href="https://nagahama.net/jyoukamachi/" meta="Local heritage map" tech="OSM · Community" project-title="長浜城下町遺産マップ" description="市民が見つけた城下町の面影を「長浜城下町遺産」として紹介。地域の歴史を歩いてたどれるWebマップです。" cta="地図を歩く"></portfolio-project>
+        <portfolio-project number="03" variant="walk" href="https://armd-02.github.io/mapmaker/" meta="Map utility / 2020—" tech="JavaScript · MapLibre" project-title="まち歩きマップメーカー" description="イベントやフィールドワーク向けに、自由に加工・利用できる地図画像をブラウザで作成するツール。" cta="地図をつくる"></portfolio-project>
+        <portfolio-project id="tools" number="04" variant="change" href="https://armd-01.sakura.ne.jp/whatsnew/" meta="Data visualization / 2026" tech="JavaScript · PHP · MariaDB" project-title="OSM What’s New Japan" description="日本のOpenStreetMapで「どこが、どう変わったか」を地図とレポートで可視化。日々の編集から地域の変化を発見できます。" cta="変化を見る"></portfolio-project>
+        <portfolio-project number="05" variant="viewer" href="https://k-sakanoshita.github.io/Easy_Changeset_Viewer/" meta="OSM tool / 2021—" tech="JavaScript · OSM API" project-title="Easy Changeset Viewer" description="OpenStreetMapの編集履歴を、地図を見ながら手軽に確認できるビューア。複雑な変更セットを直感的に読み解きます。" cta="編集を見る"></portfolio-project>
+        <portfolio-project number="06" variant="community" href="https://k-sakanoshita.github.io/community_mapmaker/" meta="Framework / 2024—" tech="OSM · Google Sheets" project-title="コミュニティマップメーカー" description="OpenStreetMapとGoogleスプレッドシートを組み合わせ、地域団体が低コストで育てられるWebマップ開発フレームワーク。" cta="詳しく見る"></portfolio-project>
       </div>
 
-      <a class="all-projects" href="https://github.com/K-Sakanoshita?tab=repositories" target="_blank" rel="noreferrer">
-        <span>GitHubですべてのリポジトリを見る</span><span aria-hidden="true">↗</span>
-      </a>
+      <div class="project-more" aria-label="その他のプロジェクト">
+        <a href="https://k-sakanoshita.github.io/expo2025-maniacs/" target="_blank" rel="noreferrer">
+          <span><small>Past project / 2025</small><strong>万博マニアックマップ</strong></span><span>↗</span>
+        </a>
+        <a href="https://github.com/K-Sakanoshita?tab=repositories" target="_blank" rel="noreferrer">
+          <span><small>Source code</small><strong>GitHubですべてのリポジトリを見る</strong></span><span>↗</span>
+        </a>
+      </div>
     </section>
 
     <section id="activity" class="activity section">
@@ -112,18 +113,21 @@
         <h2>技術を、<br><em>みんなのもの</em>に。</h2>
       </div>
       <div class="activity-list">
-        <article class="activity-item reveal">
+        <a class="activity-item reveal" href="https://wiki.openstreetmap.org/wiki/User%3AK_Sakanoshita" target="_blank" rel="noreferrer">
           <span class="activity-no">A</span>
           <div><h3>Mapping & Wikimedia</h3><p>マッピングパーティ、Wikipedia編集イベント、オープンデータソンの開催・協力。地域を歩き、記録し、共有する場をつくります。</p></div>
-        </article>
-        <article class="activity-item reveal">
+          <i aria-hidden="true">↗</i>
+        </a>
+        <a class="activity-item reveal" href="https://connpass.com/user/K_Sakanoshita/open/" target="_blank" rel="noreferrer">
           <span class="activity-no">B</span>
           <div><h3>Community Organizing</h3><p>諸国・浪漫、OpenStreetMap Foundation Japanをはじめ、関西のオープンソース／オープンデータコミュニティで活動しています。</p></div>
-        </article>
-        <article class="activity-item reveal">
+          <i aria-hidden="true">↗</i>
+        </a>
+        <a class="activity-item reveal" href="https://speakerdeck.com/barsaka2" target="_blank" rel="noreferrer">
           <span class="activity-no">C</span>
           <div><h3>Teaching & Speaking</h3><p>MapLibre、Overpass API、SPAによる地理空間情報活用を、記事・登壇・ハンズオンを通じて伝えています。</p></div>
-        </article>
+          <i aria-hidden="true">↗</i>
+        </a>
       </div>
     </section>
 

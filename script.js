@@ -6,6 +6,8 @@ class PortfolioProject extends HTMLElement {
     const variant = this.getAttribute("variant");
     const title = this.getAttribute("project-title");
     const visuals = {
+      playground: `<div class="playground"><span class="sun"></span><span class="swing"></span><span class="slide"></span><span class="tree"></span></div>`,
+      heritage: `<div class="heritage-map"><span class="river"></span><span class="street street-a"></span><span class="street street-b"></span><span class="castle">城</span><i></i><i></i><i></i></div>`,
       expo: `<div class="globe"><span></span><span></span><span></span></div>`,
       change: `<svg viewBox="0 0 480 280" aria-hidden="true"><path d="M-20 192c70-19 89-92 148-75s62 74 130 49 62-96 132-75 64 68 112 55"/><path d="M-10 238c59-42 102-27 140-70s92-32 124 8 79 53 129 10 85-26 116-8"/><g><circle cx="128" cy="117" r="9"/><circle cx="258" cy="166" r="9"/><circle cx="390" cy="91" r="9"/></g></svg>`,
       viewer: `<div class="viewer-window"><span></span><span></span><span></span><i></i><i></i><i></i></div>`,
