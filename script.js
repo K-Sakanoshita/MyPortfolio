@@ -9,10 +9,10 @@ class PortfolioProject extends HTMLElement {
       playground: `<img src="https://armd-02.github.io/Playgrounds/image/ogimage.png" alt="" loading="lazy">`,
       heritage: `<div class="heritage-map"><span class="river"></span><span class="street street-a"></span><span class="street street-b"></span><span class="castle">城</span><i></i><i></i><i></i></div>`,
       expo: `<div class="globe"><span></span><span></span><span></span></div>`,
-      change: `<svg viewBox="0 0 480 280" aria-hidden="true"><path d="M-20 192c70-19 89-92 148-75s62 74 130 49 62-96 132-75 64 68 112 55"/><path d="M-10 238c59-42 102-27 140-70s92-32 124 8 79 53 129 10 85-26 116-8"/><g><circle cx="128" cy="117" r="9"/><circle cx="258" cy="166" r="9"/><circle cx="390" cy="91" r="9"/></g></svg>`,
+      change: `<img src="https://armd-01.sakura.ne.jp/whatsnew/image/whatsnew.png" alt="" loading="lazy">`,
       viewer: `<div class="viewer-window"><span></span><span></span><span></span><i></i><i></i><i></i></div>`,
       community: `<div class="sheet"><i></i><i></i><i></i><i></i></div><div class="map-tile"><span>＋</span></div>`,
-      walk: `<div class="paper-map"><svg viewBox="0 0 220 160" aria-hidden="true"><path d="M-10 120C42 98 48 34 96 64s35 66 77 34 28-54 65-70"/><circle cx="97" cy="64" r="8"/><circle cx="174" cy="97" r="8"/></svg></div>`
+      walk: `<img src="https://armd-02.github.io/mapmaker/image/mapmaker.png" alt="" loading="lazy">`
     };
 
     this.classList.add("project-card", "reveal");

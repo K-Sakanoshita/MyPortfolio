@@ -172,7 +172,7 @@ portfolio-project { display: block; }
 .project-card a:hover .project-visual > :not(.project-number) { transform: scale(1.04) rotate(-1deg); }
 .project-visual > * { transition: transform .5s cubic-bezier(.2,.7,.2,1); }
 .playground-visual { background: #a9d4c2; }
-.playground-visual > img { width: 100%; height: 100%; object-fit: cover; }
+.project-visual > img { width: 100%; height: 100%; object-fit: cover; }
 .heritage-visual { background: #d8c9a7; }
 .heritage-map { position: relative; width: 72%; height: 68%; background: var(--paper); box-shadow: 12px 12px 0 rgba(24,52,47,.14); transform: rotate(2deg); overflow: hidden; }
 .heritage-map .river { position: absolute; left: 60%; top: -15%; width: 22%; height: 140%; border: 12px solid #83b4b1; border-left: 0; border-radius: 50%; transform: rotate(12deg); }
@@ -193,8 +193,6 @@ portfolio-project { display: block; }
 .globe span:nth-child(2) { transform: rotate(32deg); clip-path: inset(49% 0 49% 0); }
 .globe span:nth-child(3) { width: 24px; height: 24px; inset: 21% auto auto 65%; background: var(--yellow); border: 0; }
 .change-visual { background: #d9d7c6; }
-.change-visual svg path { fill: none; stroke: var(--green); stroke-width: 3; stroke-dasharray: 4 5; }
-.change-visual svg g { fill: var(--orange); }
 .viewer-visual { background: var(--yellow); }
 .viewer-window { width: 68%; height: 62%; border: 2px solid var(--ink); padding: 1.2rem; display: flex; flex-wrap: wrap; gap: .5rem; align-content: flex-start; }
 .viewer-window span { width: 7px; height: 7px; border-radius: 50%; background: var(--orange); }
@@ -206,9 +204,6 @@ portfolio-project { display: block; }
 .sheet i { display: block; height: 1px; background: var(--ink); margin: 1rem 0; }
 .map-tile { margin-left: -1rem; transform: rotate(7deg) translateY(1rem); background: var(--green); color: var(--white); display: grid; place-items: center; font-size: 2.5rem; }
 .walk-visual { background: #d4a889; }
-.paper-map { width: 68%; padding: 1rem; background: var(--white); transform: rotate(-4deg); box-shadow: 12px 12px 0 rgba(24,52,47,.15); }
-.paper-map path { fill: none; stroke: var(--green); stroke-width: 3; stroke-dasharray: 4 4; }
-.paper-map circle { fill: var(--orange); }
 .local-maps { margin-top: clamp(4rem, 7vw, 7rem); }
 .local-maps-heading { display: flex; align-items: end; justify-content: space-between; gap: 2rem; margin-bottom: 2rem; }
 .local-maps-heading .section-index { margin-bottom: .4rem; }
