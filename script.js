@@ -7,7 +7,7 @@ class PortfolioProject extends HTMLElement {
     const title = this.getAttribute("project-title");
     const visuals = {
       playground: `<img src="https://armd-02.github.io/Playgrounds/image/ogimage.png" alt="" loading="lazy">`,
-      heritage: `<div class="heritage-map"><span class="river"></span><span class="street street-a"></span><span class="street street-b"></span><span class="castle">城</span><i></i><i></i><i></i></div>`,
+      heritage: `<img src="https://armd-02.github.io/NagahamaJyoukamachi/image/ogimage.png" alt="" loading="lazy">`,
       expo: `<div class="globe"><span></span><span></span><span></span></div>`,
       change: `<img src="https://armd-01.sakura.ne.jp/whatsnew/image/whatsnew.png" alt="" loading="lazy">`,
       viewer: `<div class="viewer-window"><span></span><span></span><span></span><i></i><i></i><i></i></div>`,
