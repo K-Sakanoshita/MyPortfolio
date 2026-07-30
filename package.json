@@ -2,7 +2,8 @@
   "name": "k-sakanoshita-portfolio",
   "version": "1.0.0",
   "private": true,
+  "type": "module",
   "scripts": {
-    "build": "mkdir -p dist && cp index.html styles.css script.js dist/"
+    "build": "mkdir -p dist/server dist/.openai && cp index.html styles.css script.js dist/ && cp server.js dist/server/index.js && cp .openai/hosting.json dist/.openai/hosting.json"
   }
 }
