@@ -97,7 +97,10 @@ em { color: var(--orange); font-style: normal; }
 .route-b { stroke: var(--orange); }
 .node { fill: var(--paper); stroke: var(--green); stroke-width: 3; }
 .node-main { fill: var(--yellow); }
-.pin { fill: var(--orange); opacity: .94; filter: drop-shadow(0 16px 14px rgba(24,52,47,.18)); }
+.data-ring { fill: var(--paper); stroke: var(--orange); stroke-width: 2; opacity: .92; filter: drop-shadow(0 16px 14px rgba(24,52,47,.12)); }
+.data-ring-inner { fill: none; stroke: var(--green); stroke-dasharray: 5 7; }
+.data-core { fill: var(--yellow); stroke: var(--green); stroke-width: 4; }
+.data-link { fill: none; stroke: var(--orange); stroke-width: 3; stroke-linecap: round; stroke-dasharray: 4 6; }
 .map-caption {
   position: absolute; right: 8%; bottom: 8%; margin: 0;
   font-size: .65rem; letter-spacing: .12em; writing-mode: vertical-rl;
