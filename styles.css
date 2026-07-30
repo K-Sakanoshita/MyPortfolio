@@ -172,15 +172,7 @@ portfolio-project { display: block; }
 .project-card a:hover .project-visual > :not(.project-number) { transform: scale(1.04) rotate(-1deg); }
 .project-visual > * { transition: transform .5s cubic-bezier(.2,.7,.2,1); }
 .playground-visual { background: #a9d4c2; }
-.playground { position: relative; width: 74%; height: 65%; border-bottom: 3px solid var(--ink); }
-.playground .sun { position: absolute; right: 5%; top: 0; width: 54px; height: 54px; border-radius: 50%; background: var(--yellow); }
-.playground .swing { position: absolute; left: 8%; bottom: 0; width: 34%; height: 72%; border: 4px solid var(--ink); border-bottom: 0; }
-.playground .swing::before, .playground .swing::after { content: ""; position: absolute; top: 0; width: 2px; height: 70%; background: var(--ink); }
-.playground .swing::before { left: 28%; }
-.playground .swing::after { right: 28%; }
-.playground .slide { position: absolute; left: 50%; bottom: 0; width: 38%; height: 52%; border-left: 5px solid var(--orange); border-bottom: 5px solid var(--orange); transform: skewX(-26deg); }
-.playground .tree { position: absolute; right: -4%; bottom: 0; width: 8px; height: 35%; background: var(--ink); }
-.playground .tree::before { content: ""; position: absolute; width: 68px; height: 68px; left: -30px; top: -50px; background: var(--green); border-radius: 50% 48% 45% 52%; }
+.playground-visual > img { width: 100%; height: 100%; object-fit: cover; }
 .heritage-visual { background: #d8c9a7; }
 .heritage-map { position: relative; width: 72%; height: 68%; background: var(--paper); box-shadow: 12px 12px 0 rgba(24,52,47,.14); transform: rotate(2deg); overflow: hidden; }
 .heritage-map .river { position: absolute; left: 60%; top: -15%; width: 22%; height: 140%; border: 12px solid #83b4b1; border-left: 0; border-radius: 50%; transform: rotate(12deg); }
