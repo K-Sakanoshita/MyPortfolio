@@ -15,11 +15,11 @@ python3 -m http.server 8080
 
 ブラウザで `http://localhost:8080` を開いてください。
 
-ホスティング用のNext.js構成を使う場合は、次のコマンドで起動できます。
+ホスティング用の成果物は、次のコマンドで `dist` に生成できます。
 
 ```bash
 npm install
-npm run dev
+npm run build
 ```
 
 ## Files

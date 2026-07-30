@@ -3,13 +3,6 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "mkdir -p public && cp index.html styles.css script.js public/ && next build",
-    "start": "next start"
-  },
-  "dependencies": {
-    "next": "15.5.22",
-    "react": "19.1.0",
-    "react-dom": "19.1.0"
+    "build": "mkdir -p dist && cp index.html styles.css script.js dist/"
   }
 }
