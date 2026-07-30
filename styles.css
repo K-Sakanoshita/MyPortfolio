@@ -133,6 +133,12 @@ em { color: var(--orange); font-style: normal; }
   margin: 0; font-size: clamp(2.5rem, 5vw, 5.5rem); line-height: 1.18;
   letter-spacing: -.06em; font-weight: 500;
 }
+.section-subtitle {
+  margin: 1.1rem 0 0; font-size: clamp(.8rem, 1.2vw, 1rem); font-weight: 600;
+  letter-spacing: .02em; opacity: .68;
+}
+.projects .section-subtitle { color: var(--yellow); opacity: .9; }
+.activity-title .section-subtitle em { color: var(--orange); }
 .intro-copy { max-width: 640px; font-size: 1.03rem; }
 .intro-copy > p:first-child { font-size: clamp(1.15rem, 2vw, 1.55rem); line-height: 1.65; font-weight: 600; margin-top: .2rem; }
 .keyword-list { display: flex; flex-wrap: wrap; gap: .55rem; margin-top: 2rem; }
