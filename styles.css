@@ -129,7 +129,8 @@ portfolio-project { display: block; }
 .project-card { background: var(--green); }
 .project-card a { display: flex; flex-direction: column; height: 100%; }
 .project-visual {
-  position: relative; height: 310px; display: grid; place-items: center;
+  position: relative; width: 100%; height: auto; min-height: 310px; max-height: 520px;
+  aspect-ratio: 16 / 9; display: grid; place-items: center;
   overflow: hidden; background: var(--paper-deep); color: var(--ink);
 }
 .project-number { position: absolute; top: 1.2rem; left: 1.3rem; font-size: .68rem; font-weight: 700; }
@@ -144,13 +145,9 @@ portfolio-project { display: block; }
 .project-visual > * { transition: transform .5s cubic-bezier(.2,.7,.2,1); }
 .playground-visual { background: #a9d4c2; }
 .project-visual > img {
-  display: block; width: auto; height: auto; max-width: 100%; max-height: 100%;
+  display: block; width: 100%; height: 100%; min-width: 0; min-height: 0;
+  max-width: 100%; max-height: 100%; padding: clamp(.75rem, 1.5vw, 1.5rem);
   object-fit: contain;
-}
-.memories-visual > img,
-.community-visual > img {
-  width: min(90%, 280px); height: auto; max-width: none; max-height: none;
-  aspect-ratio: 1; object-fit: contain;
 }
 .expo-visual { background: var(--orange); }
 .change-visual { background: #d9d7c6; }
