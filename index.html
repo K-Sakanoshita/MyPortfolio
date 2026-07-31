@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=20260731-32">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%231b4b43'/%3E%3Cpath d='M14 41l12-19 10 14 7-11 8 16' fill='none' stroke='%23f4f0e6' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='26' cy='22' r='4' fill='%23e2633f'/%3E%3C/svg%3E">
 </head>
 <body>
@@ -17,17 +17,18 @@
 
   <header class="site-header">
     <a class="brand" href="#top" aria-label="ページ先頭へ">
-      <span class="brand-mark" aria-hidden="true">KS</span>
-      <span>K. Sakanoshita</span>
+      <img class="brand-mark" src="https://avatars.githubusercontent.com/u/16368223?v=4" alt="">
+      <span>K.Sakanoshita</span>
     </a>
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
       <span></span><span></span><span></span>
       <span class="sr-only">メニューを開く</span>
     </button>
     <nav id="site-nav" class="site-nav" aria-label="メインナビゲーション">
-      <a href="#projects">作品</a>
-      <a href="#activity">活動</a>
-      <a href="#writing">記事・登壇</a>
+      <a href="#projects">プロジェクト</a>
+      <a href="#tools">開発ツール</a>
+      <a href="#activity">活動・コミュニティ</a>
+      <a href="#writing">活動実績</a>
       <a class="nav-contact" href="#contact">Connect</a>
     </nav>
   </header>
@@ -36,120 +37,194 @@
     <section id="top" class="hero">
       <div class="topography" aria-hidden="true"></div>
       <div class="hero-copy reveal">
-        <p class="eyebrow"><span></span> Works & activities / K. Sakanoshita</p>
-        <h1>データをひらく。<br><em>地域を動かす。</em></h1>
+        <p class="eyebrow"><span></span> Works & activities / K.Sakanoshita</p>
+        <h1>データをひらく<br><em>地域を動かす</em></h1>
         <p class="hero-lead">オープンデータとオープンソースを軸に、地域で使われるWebアプリや仕組みをつくり、学びと実践の場を育てています。</p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="#link-index">作品と活動を見る <span aria-hidden="true">↘</span></a>
-          <a class="text-link" href="https://github.com/K-Sakanoshita" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
-        </div>
       </div>
 
-      <div class="hero-map reveal" aria-hidden="true">
-        <svg viewBox="0 0 620 620" role="img">
-          <path class="route route-a" d="M-25 477C92 429 100 346 196 319s124 31 192-36 52-156 210-189"/>
-          <path class="route route-b" d="M16 561c83-109 156-54 216-148s57-138 184-170 122-108 193-171"/>
-          <path class="route route-c" d="M-10 199c103 43 181 12 238-43s138-33 194 41 99 98 213 52"/>
-          <circle class="node node-main" cx="303" cy="333" r="20"/>
-          <circle class="node" cx="143" cy="420" r="8"/>
-          <circle class="node" cx="426" cy="241" r="8"/>
-          <circle class="node" cx="224" cy="158" r="6"/>
-          <circle class="data-ring data-ring-outer" cx="303" cy="333" r="72"/>
-          <circle class="data-ring data-ring-inner" cx="303" cy="333" r="46"/>
-          <circle class="data-core" cx="303" cy="333" r="22"/>
-          <path class="data-link" d="M303 261v-48M375 333h48M303 405v48M231 333h-48"/>
-        </svg>
-        <p class="map-caption">OPEN DATA / COMMUNITY / WEB</p>
+      <div id="link-index" class="hero-overview reveal">
+        <p class="section-index">01 — Portfolio overview</p>
+        <nav class="hero-overview-list" aria-label="ポートフォリオ概要">
+          <a href="#projects"><span>01</span><strong>プロジェクト</strong><small>使われ、育ち、地域に残る</small><i aria-hidden="true">↓</i></a>
+          <a href="#tools"><span>02</span><strong>開発ツール</strong><small>データを見つけ、確かめ、活用する</small><i aria-hidden="true">↓</i></a>
+          <a href="#activity"><span>03</span><strong>活動・コミュニティ</strong><small>イベント・プロフィール</small><i aria-hidden="true">↓</i></a>
+          <a href="#writing"><span>04</span><strong>活動実績</strong><small>記事・登壇・講師・イベント</small><i aria-hidden="true">↓</i></a>
+        </nav>
       </div>
 
       <div class="hero-foot">
         <p>Developer & Community Organizer</p>
-        <a href="#link-index" aria-label="次のセクションへ">Scroll <span>↓</span></a>
-      </div>
-    </section>
-
-    <section id="link-index" class="link-index section">
-      <p class="section-index">01 — Portfolio overview</p>
-      <div class="link-index-heading reveal">
-        <h2>取り組みを、<br>4つの視点から。</h2>
-        <p>開発、地域での実践、発信まで。これまでの仕事と活動を紹介します。</p>
-      </div>
-      <div class="link-index-grid">
-        <a class="index-card reveal" href="#projects"><span>01</span><strong>作品・Webアプリ</strong><small>地域・文化・イベント</small><i>↓</i></a>
-        <a class="index-card reveal" href="#tools"><span>02</span><strong>開発ツール</strong><small>OSMの変化・編集履歴</small><i>↓</i></a>
-        <a class="index-card reveal" href="#activity"><span>03</span><strong>活動・コミュニティ</strong><small>イベント・プロフィール</small><i>↓</i></a>
-        <a class="index-card reveal" href="#writing"><span>04</span><strong>記事・登壇</strong><small>note・Qiita・Speaker Deck</small><i>↓</i></a>
+        <a href="#projects" aria-label="次のセクションへ">Scroll <span>↓</span></a>
       </div>
     </section>
 
     <section id="projects" class="projects section">
       <div class="section-heading">
         <div>
-          <p class="section-index">02 — Maps & tools</p>
-          <h2>作品・<br>開発ツール。</h2>
-          <p class="section-subtitle">つくったもの</p>
+          <p class="section-index">02 — Projects in use</p>
+          <h2>プロジェクト</h2>
+          <p class="section-subtitle">使われ、育ち、地域に残る</p>
         </div>
-        <p>地域の課題や楽しみに向き合い、オープンデータを実際に使えるWebアプリやツールへ育てています。</p>
+        <p>地域の課題や楽しみに向き合い、実際に使われる仕組みとして届けてきました。使う人や地域とともに育ち、その先にも残っていくプロジェクトを紹介します。</p>
       </div>
 
-      <div class="project-grid">
-        <portfolio-project featured number="01" variant="playground" href="https://armd-02.github.io/Playgrounds" meta="Park map" tech="OSM · Wikimedia" project-title="遊具のある公園マップ" description="ブランコ、すべり台、砂場など、遊具の種類から公園を探せる地図。親子のお出かけ先選びを、オープンデータでお手伝いします。" cta="公園を探す"></portfolio-project>
-        <portfolio-project number="02" variant="heritage" href="https://nagahama.net/jyoukamachi/" meta="Local heritage map" tech="OSM · Community" project-title="長浜城下町遺産マップ" description="市民が見つけた城下町の面影を「長浜城下町遺産」として紹介。地域の歴史を歩いてたどれるWebマップです。" cta="地図を歩く"></portfolio-project>
-        <portfolio-project number="03" variant="walk" href="https://armd-02.github.io/mapmaker/" meta="Map utility / 2020—" tech="JavaScript · MapLibre" project-title="まち歩きマップメーカー" description="イベントやフィールドワーク向けに、自由に加工・利用できる地図画像をブラウザで作成するツール。" cta="地図をつくる"></portfolio-project>
-        <portfolio-project id="tools" number="04" variant="change" href="https://armd-01.sakura.ne.jp/whatsnew/" meta="Data visualization / 2026" tech="JavaScript · PHP · MariaDB" project-title="OSM What’s New Japan" description="日本のOpenStreetMapで「どこが、どう変わったか」を地図とレポートで可視化。日々の編集から地域の変化を発見できます。" cta="変化を見る"></portfolio-project>
-        <portfolio-project number="05" variant="viewer" href="https://k-sakanoshita.github.io/Easy_Changeset_Viewer/" meta="OSM tool / 2021—" tech="JavaScript · OSM API" project-title="Easy Changeset Viewer" description="OpenStreetMapの編集履歴を、地図を見ながら手軽に確認できるビューア。複雑な変更セットを直感的に読み解きます。" cta="編集を見る"></portfolio-project>
-        <portfolio-project number="06" variant="community" href="https://k-sakanoshita.github.io/community_mapmaker/" meta="Framework / 2024—" tech="OSM · Google Sheets" project-title="コミュニティマップメーカー" description="OpenStreetMapとGoogleスプレッドシートを組み合わせ、地域団体が低コストで育てられるWebマップ開発フレームワーク。" cta="詳しく見る"></portfolio-project>
+      <div class="project-grid project-grid-works">
+        <portfolio-project number="01" variant="walk" href="https://armd-02.github.io/mapmaker/" meta="Map utility / 2020—" tech="JavaScript · MapLibre" project-title="まち歩きマップメーカー" description="イベントやフィールドワーク向けに、自由に加工・利用できる地図画像をブラウザで作成するツール。" cta="地図をつくる"></portfolio-project>
+        <portfolio-project number="02" variant="playground" href="https://armd-02.github.io/Playgrounds" meta="Park map" tech="OSM · Wikimedia" project-title="遊具のある公園マップ" description="ブランコ、すべり台、砂場など、遊具の種類から公園を探せる地図。親子のお出かけ先選びを、オープンデータでお手伝いします。" cta="公園を探す"></portfolio-project>
+        <portfolio-project number="03" variant="change" href="https://armd-01.sakura.ne.jp/whatsnew/" meta="Data visualization / 2026" tech="JavaScript · PHP · MariaDB" project-title="OSM What’s New Japan" description="日本のOpenStreetMapで「どこが、どう変わったか」を地図とレポートで可視化。日々の編集から地域の変化を発見できます。" cta="変化を見る"></portfolio-project>
+        <portfolio-project number="04" variant="time" href="https://armd-02.github.io/TimeMapTravel_Japan/" meta="History map / Japan" tech="OpenStreetMap · Open data" project-title="少し昔の地図を見てみよう" description="過去のOpenStreetMapと現在の地図を見比べながら、まちや地域がどのように変化してきたかをたどれます。" cta="変化をたどる"></portfolio-project>
+        <portfolio-project number="05" variant="expo" href="https://k-sakanoshita.github.io/expo2025-maniacs/" meta="Past project / 2025" tech="Open data · Community" project-title="万博マニアックマップ" description="大阪・関西万博をもっと深く楽しむための、会場内外の個性的な見どころを集めたプロジェクト。開催期間中の発見と体験を共有しました。" cta="記録を見る"></portfolio-project>
+        <portfolio-project number="06" variant="memories" href="https://armd-02.github.io/OsakaMemories/" meta="Memories / Osaka" tech="Open data · Community" project-title="大阪思い出のこしマップ" description="市民の思い出と地域の記録を地図の上に残し、場所とともに読み継いでいくプロジェクトです。" cta="思い出をたどる"></portfolio-project>
+        <portfolio-project number="07" variant="heritage" href="https://nagahama.net/jyoukamachi/" meta="Local heritage map" tech="OSM · Community" project-title="長浜城下町遺産マップ" description="市民が見つけた城下町の面影を「長浜城下町遺産」として紹介。地域の歴史を歩いてたどれるWebマップです。" cta="地図を歩く"></portfolio-project>
       </div>
 
-      <section class="local-maps" aria-labelledby="local-maps-title">
+      <section class="local-maps" aria-labelledby="sanyodo-maps-title">
         <div class="local-maps-heading">
-          <p class="section-index">Local & event maps</p>
-          <h3 id="local-maps-title">地域を歩く、知る、楽しむ地図</h3>
+          <p class="section-index">Sanyodo maps</p>
+          <h3 id="sanyodo-maps-title">さんよどマップ</h3>
         </div>
         <div class="local-map-grid">
-          <a class="local-map-link reveal" href="https://armd-02.github.io/TimeMapTravel_Japan/" target="_blank" rel="noreferrer">
-            <span>History / Japan</span>
-            <strong>少し昔の地図を見てみよう</strong>
-            <small>過去のOpenStreetMapから、まちの変化をたどる。</small>
+          <a class="local-map-link reveal" href="https://github.com/armd-02/JusoNewDiscoveryMap2026" target="_blank" rel="noreferrer">
+            <span>Local / Juso · 2026</span>
+            <strong>十三新発見マップ2026</strong>
+            <small>十三を歩いて見つけた、まちの新しい魅力を紹介。</small>
             <i aria-hidden="true">↗</i>
           </a>
-          <a class="local-map-link reveal" href="https://armd-02.github.io/OsakaMemories/" target="_blank" rel="noreferrer">
-            <span>Memories / Osaka</span>
-            <strong>大阪思い出のこしマップ</strong>
-            <small>市民の思い出と地域の記録を、地図の上で読む。</small>
+          <a class="local-map-link reveal" href="https://armd-02.github.io/ShinMikuOtachi2026/" target="_blank" rel="noreferrer">
+            <span>Local / Shin-Osaka & Mikuni · 2026</span>
+            <strong>新大阪・三国お立ち寄りMAP 2026–2027</strong>
+            <small>新大阪・三国で立ち寄りたい地域のスポットを案内。</small>
             <i aria-hidden="true">↗</i>
           </a>
           <a class="local-map-link reveal" href="https://armd-02.github.io/JusoNewDiscoveryMap2025/" target="_blank" rel="noreferrer">
-            <span>Local / Juso</span>
+            <span>Local / Juso · 2025</span>
             <strong>十三新発見マップ2025</strong>
             <small>十三を歩いて見つけた、まちの魅力を紹介。</small>
             <i aria-hidden="true">↗</i>
           </a>
           <a class="local-map-link reveal" href="https://armd-02.github.io/JusoArtFes2025/" target="_blank" rel="noreferrer">
-            <span>Art festival / Juso</span>
+            <span>Art festival / Juso · 2025</span>
             <strong>十三アートフェスマップ2025</strong>
-            <small>アートフェスの会場と作品をめぐるイベントマップ。</small>
+            <small>淀川アートネットの会場と作品をめぐるマップ。</small>
             <i aria-hidden="true">↗</i>
           </a>
-          <a class="local-map-link reveal" href="https://armd-02.github.io/ShinMikuOtachi2026/" target="_blank" rel="noreferrer">
-            <span>Local / Shin-Osaka & Mikuni</span>
-            <strong>新大阪・三国お立ち寄りMAP<br>2026–2027</strong>
-            <small>新大阪・三国で立ち寄りたい地域のスポットを案内。</small>
+          <a class="local-map-link reveal" href="https://armd-02.github.io/ShinHigaOtachi2025/" target="_blank" rel="noreferrer">
+            <span>Local / Shin-Osaka & Higashiyodogawa · 2025</span>
+            <strong>新大阪・ひがよどお立ち寄りマップ2025</strong>
+            <small>新大阪・東淀川で立ち寄りたいスポットを案内。</small>
             <i aria-hidden="true">↗</i>
           </a>
           <a class="local-map-link reveal" href="https://armd-02.github.io/shinmikuartfes2025/" target="_blank" rel="noreferrer">
-            <span>Art festival / Shin-Osaka & Mikuni</span>
-            <strong>新大阪・三国<br>アートフェスマップ2025</strong>
+            <span>Art festival / Shin-Osaka & Mikuni · 2025</span>
+            <strong>新大阪・三国アートフェスマップ2025</strong>
             <small>地域を歩きながらアートに出会うイベントマップ。</small>
+            <i aria-hidden="true">↗</i>
+          </a>
+          <a class="local-map-link reveal" href="https://armd-02.github.io/HigayodoStreetMap2025/" target="_blank" rel="noreferrer">
+            <span>Local / Higashiyodogawa · 2025</span>
+            <strong>ひがよどストリートマップ2025</strong>
+            <small>東淀川の通りと地域の魅力を歩いて楽しむマップ。</small>
+            <i aria-hidden="true">↗</i>
+          </a>
+          <a class="local-map-link reveal" href="https://armd-02.github.io/JusoNewDiscoveryMap2024/" target="_blank" rel="noreferrer">
+            <span>Local / Juso · 2024</span>
+            <strong>十三新発見マップ2024</strong>
+            <small>まち歩きで見つけた十三の魅力を記録したマップ。</small>
+            <i aria-hidden="true">↗</i>
+          </a>
+          <a class="local-map-link reveal" href="https://armd-02.github.io/JusoArtFes2024/" target="_blank" rel="noreferrer">
+            <span>Art festival / Juso · 2024</span>
+            <strong>十三アートフェスマップ2024</strong>
+            <small>十三のまちでアートに出会うイベントマップ。</small>
+            <i aria-hidden="true">↗</i>
+          </a>
+          <a class="local-map-link reveal" href="https://armd-02.github.io/ShinMikuArtFes2024/" target="_blank" rel="noreferrer">
+            <span>Art festival / Shin-Osaka & Mikuni · 2024</span>
+            <strong>新大阪・三国アートフェスマップ2024</strong>
+            <small>新大阪・三国の会場と作品をめぐるイベントマップ。</small>
+            <i aria-hidden="true">↗</i>
+          </a>
+          <a class="local-map-link reveal" href="https://armd-02.github.io/HigayodoStreetMap2024/" target="_blank" rel="noreferrer">
+            <span>Local / Higashiyodogawa · 2024</span>
+            <strong>ひがよどストリートマップ2024</strong>
+            <small>東淀川のまちを歩き、地域の魅力を見つけるマップ。</small>
+            <i aria-hidden="true">↗</i>
+          </a>
+          <a class="local-map-link reveal" href="https://armd-02.github.io/ShinHigaOtachi2024/" target="_blank" rel="noreferrer">
+            <span>Local / Shin-Osaka & Higashiyodogawa · 2024</span>
+            <strong>新大阪・ひがよどお立ち寄りマップ2024</strong>
+            <small>新大阪・東淀川の立ち寄りスポットを紹介。</small>
+            <i aria-hidden="true">↗</i>
+          </a>
+          <a class="local-map-link reveal" href="https://github.com/armd-02/HigayodoWelcome2024" target="_blank" rel="noreferrer">
+            <span>Welcome map / Higashiyodogawa · 2024</span>
+            <strong>Higayodo Welcome 2024</strong>
+            <small>東淀川を訪れる人に地域の情報を届けるマップ。</small>
+            <i aria-hidden="true">↗</i>
+          </a>
+          <a class="local-map-link reveal" href="https://github.com/armd-02/JusoNewDiscoveryMap2023" target="_blank" rel="noreferrer">
+            <span>Local / Juso · 2023</span>
+            <strong>十三新発見マップ2023</strong>
+            <small>十三の地域資源を歩いて見つけ、共有するマップ。</small>
+            <i aria-hidden="true">↗</i>
+          </a>
+          <a class="local-map-link reveal" href="https://github.com/armd-02/JusoArtFes2023" target="_blank" rel="noreferrer">
+            <span>Art festival / Juso · 2023</span>
+            <strong>十三アートフェスマップ2023</strong>
+            <small>十三アートフェスをまちとともに楽しむマップ。</small>
+            <i aria-hidden="true">↗</i>
+          </a>
+          <a class="local-map-link reveal" href="https://github.com/armd-02/JusoArtFes2022" target="_blank" rel="noreferrer">
+            <span>Art festival / Juso · 2022</span>
+            <strong>十三アートフェスマップ2022</strong>
+            <small>十三の会場や作品を案内するイベントマップ。</small>
+            <i aria-hidden="true">↗</i>
+          </a>
+          <a class="local-map-link reveal" href="https://github.com/armd-02/AattoMark-Yodogawa" target="_blank" rel="noreferrer">
+            <span>Local archive / Yodogawa</span>
+            <strong>AattoMark Yodogawa</strong>
+            <small>淀川地域に関する情報をまとめたプロジェクト。</small>
+            <i aria-hidden="true">↗</i>
+          </a>
+        </div>
+      </section>
+
+      <div id="tools" class="section-heading project-tools-heading">
+        <div>
+          <p class="section-index">Development tools</p>
+          <h2>開発ツール</h2>
+          <p class="section-subtitle">データを見つけ、確かめ、活用する</p>
+        </div>
+        <p>OpenStreetMapやWikimediaのデータを見つけ、変化や編集履歴を確かめ、地域で活用するための道具を開発しています。</p>
+      </div>
+
+      <div class="project-grid project-grid-tools">
+        <portfolio-project number="08" variant="viewer" href="https://k-sakanoshita.github.io/Easy_Changeset_Viewer/" meta="OSM tool / 2021—" tech="JavaScript · OSM API" project-title="Easy Changeset Viewer" description="OpenStreetMapの編集履歴を、地図を見ながら手軽に確認できるビューア。複雑な変更セットを直感的に読み解きます。" cta="編集を見る"></portfolio-project>
+        <portfolio-project number="09" variant="community" href="https://k-sakanoshita.github.io/community_mapmaker/" meta="Framework / 2024—" tech="OSM · Google Sheets" project-title="コミュニティマップメーカー" description="OpenStreetMapとGoogleスプレッドシートを組み合わせ、地域団体が低コストで育てられるWebマップ開発フレームワーク。万博マニアックマップや十三アートフェスマップなどに活用されています。" cta="詳しく見る"></portfolio-project>
+      </div>
+
+      <section class="local-maps" aria-labelledby="other-projects-title">
+        <div class="local-maps-heading">
+          <p class="section-index">Other projects</p>
+          <h3 id="other-projects-title">その他</h3>
+        </div>
+        <div class="local-map-grid">
+          <a class="local-map-link reveal" href="https://github.com/K-Sakanoshita/MuPlay" target="_blank" rel="noreferrer">
+            <span>MSX software / 1998–2000</span>
+            <strong>MuPLAY</strong>
+            <small>MSXturboR向けに開発した、MGS・MPKなどに対応するマルチミュージックプレイヤー。</small>
+            <i aria-hidden="true">↗</i>
+          </a>
+          <a class="local-map-link reveal" href="https://www.netfort.gr.jp/~saka/dol/" target="_blank" rel="noreferrer">
+            <span>Game utility / 2010—</span>
+            <strong>DOL_CookingRecipe</strong>
+            <small>「大航海時代 Online」の調理レシピを、レシピ帳や材料から検索できるツール。</small>
             <i aria-hidden="true">↗</i>
           </a>
         </div>
       </section>
 
       <div class="project-more" aria-label="その他のプロジェクト">
-        <a href="https://k-sakanoshita.github.io/expo2025-maniacs/" target="_blank" rel="noreferrer">
-          <span><small>Past project / 2025</small><strong>万博マニアックマップ</strong></span><span>↗</span>
-        </a>
         <a href="https://github.com/K-Sakanoshita?tab=repositories" target="_blank" rel="noreferrer">
           <span><small>Source code</small><strong>GitHubですべてのリポジトリを見る</strong></span><span>↗</span>
         </a>
@@ -161,101 +236,150 @@
         <p class="section-index">03 — Community</p>
         <h2>活動・<br>コミュニティ</h2>
         <p class="section-subtitle">技術を、<em>みんなのもの</em>に。</p>
+        <p class="activity-description">開発したアプリを地域の現場へ持ち出し、ワークショップや日々の活動を通じて、参加する人とともにデータをつくり、使う場を育てています。講演や記事、アプリの開発と活用など、技術と実践を往復しつつ、地域やまちに残るものを作ろうとあがいています。ここで紹介したほかにも、さまざまなコミュニティに関わっています。</p>
       </div>
-      <div class="activity-list">
-        <div class="year-review-grid">
-          <a class="year-review reveal" href="https://note.com/barsaka/n/n7cad46fbd949" target="_blank" rel="noreferrer">
-            <span class="year-review-year">2025</span>
-            <div>
-              <p>Open data activity review</p>
-              <h3>地図をつくり、伝え、<br>次の担い手と育てる。</h3>
-              <ul>
-                <li>地域・イベント向けWebマップの開発</li>
-                <li>国内外での講演と大学での地図ワークショップ</li>
-                <li>能登半島でのマッピングと大型カンファレンス開催</li>
-              </ul>
-              <strong>2025年の活動をnoteで読む <i aria-hidden="true">↗</i></strong>
-            </div>
-          </a>
-          <a class="year-review reveal" href="https://note.com/barsaka/n/n4cc0db168cf7" target="_blank" rel="noreferrer">
-            <span class="year-review-year">2024</span>
-            <div>
-              <p>Open data activity review</p>
-              <h3>データと地域をつなぐ<br>仕組みを広げる。</h3>
-              <ul>
-                <li>能登半島地震のクライシスマッピング</li>
-                <li>「少し昔の地図」など地域マップの開発</li>
-                <li>各地のマッピングパーティと勉強会・登壇</li>
-              </ul>
-              <strong>2024年の活動をnoteで読む <i aria-hidden="true">↗</i></strong>
-            </div>
-          </a>
-        </div>
-        <a class="activity-item reveal" href="https://wiki.openstreetmap.org/wiki/User%3AK_Sakanoshita" target="_blank" rel="noreferrer">
+      <ul class="activity-list community-list">
+        <li class="activity-item reveal">
           <span class="activity-no">A</span>
-          <div><h3>Mapping & Wikimedia</h3><p>マッピングパーティ、Wikipedia編集イベント、オープンデータソンの開催・協力。地域を歩き、記録し、共有する場をつくります。</p></div>
-          <i aria-hidden="true">↗</i>
-        </a>
-        <a class="activity-item reveal" href="https://connpass.com/user/K_Sakanoshita/open/" target="_blank" rel="noreferrer">
+          <div>
+            <h3><a href="https://openstreetmap.jp/" target="_blank" rel="noreferrer">OpenStreetMap Japan</a></h3>
+            <p>誰もが使い、編集できる自由な地図を、日本の利用者や地域コミュニティとともに育てています。</p>
+            <p class="community-channels"><a href="https://openstreetmap.jp/" target="_blank" rel="noreferrer">Web</a> / <a href="https://discord.gg/pNuUM99kUX" target="_blank" rel="noreferrer">Discord</a></p>
+          </div>
+        </li>
+        <li class="activity-item reveal">
           <span class="activity-no">B</span>
-          <div><h3>Community Organizing</h3><p>諸国・浪漫、OpenStreetMap Foundation Japanをはじめ、関西のオープンソース／オープンデータコミュニティで活動しています。</p></div>
-          <i aria-hidden="true">↗</i>
-        </a>
-        <a class="activity-item reveal" href="https://speakerdeck.com/barsaka2" target="_blank" rel="noreferrer">
+          <div>
+            <h3><a href="https://www.osmf.jp/" target="_blank" rel="noreferrer">OpenStreetMap Foundation Japan</a></h3>
+            <p>カンファレンスの開催やサーバー運用などを通じて、日本のOpenStreetMapコミュニティを支えています。</p>
+          </div>
+        </li>
+        <li class="activity-item reveal">
           <span class="activity-no">C</span>
-          <div><h3>Teaching & Speaking</h3><p>MapLibre、Overpass API、SPAによる地理空間情報活用を、記事・登壇・ハンズオンを通じて伝えています。</p></div>
-          <i aria-hidden="true">↗</i>
-        </a>
-      </div>
+          <div>
+            <h3><a href="https://meta.wikimedia.org/wiki/Wikimedians_of_Japan_User_Group" target="_blank" rel="noreferrer">Wikimedians of Japan User Group</a></h3>
+            <p>日本語版ウィキメディア・プロジェクトの発展と、参加者が安心して活動できる環境づくりに取り組んでいます。</p>
+          </div>
+        </li>
+        <li class="activity-item reveal">
+          <span class="activity-no">D</span>
+          <div>
+            <h3><a href="https://countries-romantic.connpass.com/" target="_blank" rel="noreferrer">諸国・浪漫</a></h3>
+            <p>地域の人自身が情報を記録し、発信する文化を各地に根づかせるための活動を続けています。</p>
+          </div>
+        </li>
+        <li class="activity-item reveal">
+          <span class="activity-no">E</span>
+          <div>
+            <h3><a href="https://code4.osaka/" target="_blank" rel="noreferrer">Code for OSAKA</a></h3>
+            <p>ITやオープンデータを活かし、市民の手で大阪のまちの課題に向き合うシビックテック・コミュニティです。</p>
+          </div>
+        </li>
+        <li class="activity-item reveal">
+          <span class="activity-no">F</span>
+          <div>
+            <h3><a href="https://yodogawaartnet.jimdofree.com/" target="_blank" rel="noreferrer">淀川アートネット</a></h3>
+            <p>十三を中心に、文化活動を応援しながら人や店をつなぎ、アートでまちを盛り上げています。</p>
+          </div>
+        </li>
+        <li class="activity-item reveal">
+          <span class="activity-no">G</span>
+          <div>
+            <h3><a href="https://codeforkusatsu.org/" target="_blank" rel="noreferrer">Code for Kusatsu</a></h3>
+            <p>ICTを活用し、みんなが住み続けたいと思える草津のまちづくりを進めるコミュニティです。</p>
+          </div>
+        </li>
+      </ul>
     </section>
 
     <section id="writing" class="writing section">
       <div class="section-heading">
         <div>
-          <p class="section-index">04 — Writing & Talks</p>
-          <h2>記事・登壇</h2>
-          <p class="section-subtitle">活動の記録を、noteから。</p>
+          <p class="section-index">04 — Activity record</p>
+          <h2>活動実績</h2>
+          <p class="section-subtitle">記事・登壇・講師・イベント</p>
         </div>
-        <p>現在の記事投稿はnoteが中心です。年間の活動記録から、開発や地域での実践、その背景にある技術まで発信しています。</p>
+        <p>年間の活動記録から、開発や地域での実践、その背景にある技術まで発信しています。</p>
       </div>
-      <div class="writing-list">
-        <a class="writing-item writing-featured reveal" href="https://note.com/barsaka/n/n7cad46fbd949" target="_blank" rel="noreferrer">
-          <span>2025 · note</span><h3>2025年オープンデータ<br>関連活動まとめ</h3><i aria-hidden="true">↗</i>
-        </a>
-        <a class="writing-item reveal" href="https://note.com/barsaka/n/n4cc0db168cf7" target="_blank" rel="noreferrer">
-          <span>2024 · note</span><h3>2024年オープンデータ<br>関連活動まとめ</h3><i aria-hidden="true">↗</i>
-        </a>
-        <a class="writing-item reveal" href="https://qiita.com/K-Sakanoshita/items/0c610d76bba2e7245ea5" target="_blank" rel="noreferrer">
-          <span>2019 · Qiita</span><h3>Overpass APIのススメ</h3><i aria-hidden="true">↗</i>
-        </a>
+      <div class="talk-years">
+        <section class="talk-year reveal" aria-labelledby="talks-2025">
+          <div class="talk-year-heading">
+            <h3 id="talks-2025">2025</h3>
+            <a href="https://note.com/barsaka/n/n7cad46fbd949" target="_blank" rel="noreferrer">活動まとめ <i aria-hidden="true">↗</i></a>
+          </div>
+          <ul class="talk-list">
+            <li><time datetime="2025-02-22">02.22</time><span>Japan Wikimedia Conference 2025</span><span class="talk-role">開催・講演</span></li>
+            <li><time datetime="2025-06-06">06–12月</time><span>流通科学大学 地図ワークショップ</span><span class="talk-role">全4回・講師</span></li>
+            <li><time datetime="2025-06-08">06.08</time><span>広報・Wikimedia向け写真撮影のコツ！</span><span class="talk-role">講師</span></li>
+            <li><time datetime="2025-07-05">07.05</time><span>FOSS4G Kansai</span><span class="talk-role">開催・講演</span></li>
+            <li><time datetime="2025-08-03">08.03</time><span>オープンソースカンファレンス京都</span><span class="talk-role">講演</span></li>
+            <li><time datetime="2025-08-06">08.06</time><span>OpenStreetMap勉強会 IN 徳島</span><span class="talk-role">講演</span></li>
+            <li><time datetime="2025-08-08">08.08</time><span>COSCUP 2025 / Taiwan</span><span class="talk-role">講演</span></li>
+            <li><time datetime="2025-08-13">08.13</time><span>家島で流通科学大学の学生向けマッピングパーティ</span><span class="talk-role">講師</span></li>
+            <li><time datetime="2025-09-18">09.18</time><span>「Software Design 2025年10月号」に記事掲載</span><span class="talk-role">記事掲載</span></li>
+            <li><time datetime="2025-10-04">10.04</time><span>第1回 DBSJセミナー</span><span class="talk-role">講演</span></li>
+            <li><time datetime="2025-10-05">10.05</time><span>大阪・関西万博「地図ぬりえ」イベント</span><span class="talk-role">開催</span></li>
+            <li><time datetime="2025-10-25">10.25</time><span>オープンソースカンファレンス東京/Fall</span><span class="talk-role">講演</span></li>
+            <li><time datetime="2025-11-14">11.14</time><span>モチモチトーク #76 / 金沢</span><span class="talk-role">登壇</span></li>
+            <li><time datetime="2025-11-20">11.20</time><span>Wikimedia Commonsを活用した地域の想い出作り</span><span class="talk-role">講演</span></li>
+            <li><time datetime="2025-11-22">11.22</time><span>オープンソースカンファレンス福岡</span><span class="talk-role">開催・講演</span></li>
+            <li><time datetime="2025-11-29">11.29</time><span>四日市市「あさけ」まち歩き</span><span class="talk-role">講師</span></li>
+            <li><time datetime="2025-11-30">11.30</time><span>日野まるごと デジタル化計画 体験会</span><span class="talk-role">開催・講師</span></li>
+            <li><time datetime="2025-12-12">12.12</time><span>明治大学 情報科学科</span><span class="talk-role">特別講義</span></li>
+            <li><time datetime="2025-12-17">12.17</time><span>大阪大学 地図ワークショップ</span><span class="talk-role">講師</span></li>
+          </ul>
+        </section>
+
+        <section class="talk-year reveal" aria-labelledby="talks-2024">
+          <div class="talk-year-heading">
+            <h3 id="talks-2024">2024</h3>
+            <a href="https://note.com/barsaka/n/n4cc0db168cf7" target="_blank" rel="noreferrer">活動まとめ <i aria-hidden="true">↗</i></a>
+          </div>
+          <ul class="talk-list">
+            <li><time datetime="2024-01-06">01.06</time><span>エンジニアコミュニティLT 2024 feat.KANSAI</span><span class="talk-role">発表</span></li>
+            <li><time datetime="2024-01-30">01.30</time><span>能登半島地震におけるクライシスマッピング</span><span class="talk-role">講師</span></li>
+            <li><time datetime="2024-02-23">02.23</time><span>自分の活動に活かすオープンデータ勉強会</span><span class="talk-role">開催・講師</span></li>
+            <li><time datetime="2024-05-19">05.19</time><span>MapLibreで地図サイトをつくる！</span><span class="talk-role">講師</span></li>
+            <li><time datetime="2024-06-29">06.29</time><span>オープンソースカンファレンス北海道</span><span class="talk-role">発表</span></li>
+            <li><time datetime="2024-06-30">06.30</time><span>マッピングパーティ in 北海道神宮</span><span class="talk-role">開催</span></li>
+            <li><time datetime="2024-08-04">08.04</time><span>みんなのサマーセミナー 2024</span><span class="talk-role">地図ぬりえ講師</span></li>
+            <li><time datetime="2024-09-24">09.24</time><span>ヒーローズリーグ 2024 開発素材LT</span><span class="talk-role">発表</span></li>
+            <li><time datetime="2024-09-29">09.29</time><span>オープンソースカンファレンス広島</span><span class="talk-role">発表</span></li>
+            <li><time datetime="2024-10-05">10.05</time><span>四日市市オープンデータソン</span><span class="talk-role">講師</span></li>
+            <li><time datetime="2024-11-10">11.10</time><span>FOSS4G 2024 Japan</span><span class="talk-role">発表</span></li>
+            <li><time datetime="2024-11-19">11.19</time><span>Code for Japan Summit</span><span class="talk-role">実行委員・発表</span></li>
+            <li><time datetime="2024-11-24">11.24</time><span>大経大 KidsSlimeFesta</span><span class="talk-role">ワークショップ</span></li>
+            <li><time datetime="2024-12-02">12.02</time><span>OSM/FOSS4Gアドベントカレンダー</span><span class="talk-role">発表</span></li>
+            <li><time datetime="2024-12-07">12.07</time><span>オープンソースカンファレンス福岡</span><span class="talk-role">JUS登壇</span></li>
+          </ul>
+        </section>
       </div>
       <div class="channel-links">
-        <a class="channel-primary" href="https://note.com/barsaka" target="_blank" rel="noreferrer">note（現在の主力） <span>↗</span></a>
+        <a href="https://note.com/barsaka" target="_blank" rel="noreferrer">note <span>↗</span></a>
         <a href="https://qiita.com/K-Sakanoshita" target="_blank" rel="noreferrer">Qiita <span>↗</span></a>
         <a href="https://speakerdeck.com/barsaka2" target="_blank" rel="noreferrer">Speaker Deck <span>↗</span></a>
         <a href="https://k-sakanoshita.medium.com/" target="_blank" rel="noreferrer">Medium <span>↗</span></a>
-        <a href="https://connpass.com/user/K_Sakanoshita/open/" target="_blank" rel="noreferrer">connpass <span>↗</span></a>
       </div>
     </section>
 
     <section id="contact" class="contact section">
-      <div class="contact-orbit" aria-hidden="true"><span></span><span></span><span></span></div>
       <p class="section-index">05 — Connect</p>
-      <h2>データと技術で、<br><em>一緒にできること</em>を。</h2>
-      <p>プロジェクト、地域活動、登壇・ワークショップについて。公開チャンネルからお気軽にどうぞ。</p>
+      <h2><span>データと技術で、</span><br><em>一緒にできること</em>を</h2>
+      <p>プロジェクト、地域活動、登壇・ワークショップのご相談など、お気軽にどうぞ。</p>
       <div class="contact-links">
-        <a class="button button-light" href="https://github.com/K-Sakanoshita" target="_blank" rel="noreferrer">GitHubでつながる <span>↗</span></a>
-        <a class="text-link text-link-light" href="https://x.com/K_Sakanoshita" target="_blank" rel="noreferrer">X / Twitter <span>↗</span></a>
+        <a class="button button-light" href="https://x.com/K_Sakanoshita" target="_blank" rel="noreferrer">X / Twitter <span>↗</span></a>
+        <a class="text-link text-link-light" href="https://github.com/K-Sakanoshita" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
+        <a class="text-link text-link-light" href="https://www.facebook.com/K.Sakanoshita" target="_blank" rel="noreferrer">Facebook <span>↗</span></a>
+        <a class="text-link text-link-light" href="https://connpass.com/user/K_Sakanoshita/open/" target="_blank" rel="noreferrer">connpass <span>↗</span></a>
       </div>
     </section>
   </main>
 
   <footer>
-    <p>© <span id="year">2026</span> K. Sakanoshita</p>
     <p>Open data, open source, open future.</p>
     <a href="#top">Back to top ↑</a>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="script.js?v=20260731-1"></script>
 </body>
 </html>

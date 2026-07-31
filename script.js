@@ -7,16 +7,17 @@ class PortfolioProject extends HTMLElement {
     const title = this.getAttribute("project-title");
     const visuals = {
       playground: `<img src="https://armd-02.github.io/Playgrounds/image/ogimage.png" alt="" loading="lazy">`,
+      time: `<img src="https://armd-02.github.io/TimeMapTravel_Japan/image/thumbnail.png" alt="" loading="lazy">`,
       heritage: `<img src="https://armd-02.github.io/NagahamaJyoukamachi/image/ogimage.png" alt="" loading="lazy">`,
-      expo: `<div class="globe"><span></span><span></span><span></span></div>`,
+      memories: `<img src="https://armd-02.github.io/OsakaMemories/image/splash.png" alt="" loading="lazy">`,
+      expo: `<img src="https://k-sakanoshita.github.io/expo2025-maniacs/image/ogimage.png" alt="" loading="lazy">`,
       change: `<img src="https://armd-01.sakura.ne.jp/whatsnew/image/whatsnew.png" alt="" loading="lazy">`,
       viewer: `<div class="viewer-window"><span></span><span></span><span></span><i></i><i></i><i></i></div>`,
-      community: `<div class="sheet"><i></i><i></i><i></i><i></i></div><div class="map-tile"><span>＋</span></div>`,
+      community: `<img src="https://k-sakanoshita.github.io/community_mapmaker/image/cMapmaker.png" alt="" loading="lazy">`,
       walk: `<img src="https://armd-02.github.io/mapmaker/image/mapmaker.png" alt="" loading="lazy">`
     };
 
     this.classList.add("project-card", "reveal");
-    if (this.hasAttribute("featured")) this.classList.add("project-featured");
     this.innerHTML = `
       <a href="${this.getAttribute("href")}" target="_blank" rel="noreferrer" aria-label="${title}を開く">
         <div class="project-visual ${variant}-visual">
@@ -64,4 +65,3 @@ const observer = new IntersectionObserver(
 );
 
 document.querySelectorAll(".reveal").forEach((element) => observer.observe(element));
-document.querySelector("#year").textContent = new Date().getFullYear();

@@ -1,6 +1,6 @@
 # MyPortfolio
 
-坂ノ下 勝幸の作品と活動を紹介する、GitHub Pages向けポートフォリオサイトです。
+K.Sakanoshitaのプロジェクトと活動を紹介する、GitHub Pages向けポートフォリオサイトです。
 
 OpenStreetMap、Wikimedia、オープンデータを軸にしたWebアプリ開発、
 コミュニティ活動、記事・登壇資料を1ページにまとめています。
