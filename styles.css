@@ -155,6 +155,12 @@ portfolio-project { display: block; min-width: 0; }
 .viewer-window i { display: block; width: 100%; height: 9px; background: var(--ink); opacity: .75; margin-top: .4rem; }
 .viewer-window i:nth-of-type(2) { width: 70%; }
 .viewer-window i:nth-of-type(3) { height: 80px; opacity: .15; }
+.tiles-visual { background: #b9d5cb; }
+.tiles-stack { position: relative; width: 42%; aspect-ratio: 1; }
+.tiles-stack span { position: absolute; inset: 0; border: 2px solid var(--ink); background: var(--paper); transform: rotate(-8deg) translate(-12%, 8%); }
+.tiles-stack span:nth-child(2) { background: var(--yellow); transform: rotate(5deg) translate(10%, -4%); }
+.tiles-stack span:nth-child(3) { background: var(--green); transform: none; }
+.tiles-stack i { position: absolute; inset: 0; display: grid; place-items: center; color: var(--white); font-size: clamp(2rem, 5vw, 4.5rem); font-style: normal; font-weight: 700; letter-spacing: -.08em; }
 .community-visual { background: #ff5a0a; }
 .walk-visual { background: #d4a889; }
 .local-maps { margin-top: clamp(4rem, 7vw, 7rem); }
