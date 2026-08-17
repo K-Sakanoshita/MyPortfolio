@@ -116,6 +116,15 @@ em { color: var(--orange); font-style: normal; }
 }
 .projects .section-subtitle { color: var(--yellow); opacity: .9; }
 .activity-title .section-subtitle em { color: var(--orange); }
+.profile-anchor {
+  max-width: 520px; margin-top: 2rem; padding: 1.25rem 0;
+  border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
+}
+.profile-anchor h3 { margin: 0; font-size: clamp(1.05rem, 1.5vw, 1.3rem); line-height: 1.45; letter-spacing: -.02em; }
+.profile-anchor h3 span { font-size: .78em; font-weight: 500; opacity: .62; }
+.profile-anchor .profile-role { margin: .3rem 0 .85rem; color: var(--orange); font-size: .78rem; font-weight: 700; }
+.profile-anchor ul { margin: 0; padding: 0; list-style: none; }
+.profile-anchor li { font-size: .76rem; line-height: 1.75; }
 .activity-description { max-width: 520px; margin: 2rem 0 0; color: rgba(24,52,47,.72); font-size: .92rem; line-height: 1.9; }
 .projects { background: var(--green); color: var(--white); }
 .section-heading { display: grid; grid-template-columns: 1fr minmax(260px, 32%); align-items: end; gap: 4rem; margin-bottom: 5rem; }
