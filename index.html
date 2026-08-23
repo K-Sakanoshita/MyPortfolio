@@ -19,7 +19,7 @@
     ],
     "url": "https://k-sakanoshita.github.io/MyPortfolio/",
     "image": "https://avatars.githubusercontent.com/u/16368223?v=4",
-    "description": "オープンデータとオープンソースを活用し、地域で使われるWebアプリや仕組みをつくるオープンデータ実践者。",
+    "description": "OpenStreetMapやWikimediaを中心に、地域の情報や知識を誰もが使い、育て、次へ残せる形にするオープンデータ実践者。",
     "jobTitle": "オープンデータ実践者",
     "worksFor": {
       "@type": "EducationalOrganization",
@@ -68,7 +68,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20260818-1">
+  <link rel="stylesheet" href="styles.css?v=20260821-1">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%231b4b43'/%3E%3Cpath d='M14 41l12-19 10 14 7-11 8 16' fill='none' stroke='%23f4f0e6' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='26' cy='22' r='4' fill='%23e2633f'/%3E%3C/svg%3E">
 </head>
 
@@ -99,7 +99,7 @@
       <div class="hero-copy reveal">
         <p class="eyebrow"><span></span> Works & activities / K.Sakanoshita</p>
         <h1>データをひらく<br><em>地域を動かす</em></h1>
-        <p class="hero-lead">オープンデータ実践者。オープンデータとオープンソースを軸に、地域で使われるWebアプリや仕組みをつくり、学びと実践の場を育てています。</p>
+        <p class="hero-lead">地域の情報や知識を、誰もが使い、育て、次へ残せる形に。OpenStreetMapやWikimediaを中心に、蓄積したデータをWebアプリやまち歩き、ワークショップで地域へ還元しています。</p>
       </div>
 
       <div id="link-index" class="hero-overview reveal">
@@ -107,7 +107,7 @@
         <nav class="hero-overview-list" aria-label="ポートフォリオ概要">
           <a href="#projects"><span>01</span><strong>プロジェクト</strong><small>使われ、育ち、地域に残る</small><i aria-hidden="true">↓</i></a>
           <a href="#tools"><span>02</span><strong>開発ツール</strong><small>データを見つけ、確かめ、活用する</small><i aria-hidden="true">↓</i></a>
-          <a href="#activity"><span>03</span><strong>活動・コミュニティ</strong><small>イベント・プロフィール</small><i aria-hidden="true">↓</i></a>
+          <a href="#activity"><span>03</span><strong>活動・コミュニティ</strong><small>記録・共有・地域での実践</small><i aria-hidden="true">↓</i></a>
           <a href="#writing"><span>04</span><strong>活動実績</strong><small>記事・登壇・講師・イベント</small><i aria-hidden="true">↓</i></a>
         </nav>
       </div>
@@ -125,16 +125,24 @@
           <h2>プロジェクト</h2>
           <p class="section-subtitle">使われ、育ち、地域に残る</p>
         </div>
-        <p>地域の課題や楽しみに向き合い、実際に使われる仕組みとして届けてきました。使う人や地域とともに育ち、その先にも残っていくプロジェクトを紹介します。</p>
+        <p>地域で集めた情報を、誰もが使えるデータとして残し、地図やWebアプリにして地域へ返す。そんな実践から生まれたプロジェクトを紹介します。</p>
       </div>
 
+      <ol class="activity-cycle reveal" aria-label="地域の情報を記録し、共有し、活用して地域へ返す活動の循環">
+        <li><span>01</span><strong>地域の情報・知識</strong><small>まちを歩き、話を聞く</small></li>
+        <li><span>02</span><strong>記録する</strong><small>調べたことをデータにする</small></li>
+        <li class="activity-cycle-core"><span>03</span><strong>OpenStreetMap<br>Wikimedia</strong><small>みんなで育てる共有基盤へ</small></li>
+        <li><span>04</span><strong>活用する</strong><small>地図・Webアプリ・教育に</small></li>
+        <li><span>05</span><strong>地域へ還元</strong><small>新しい情報と参加者へつなぐ</small></li>
+      </ol>
+
       <div class="project-grid project-grid-works">
-        <portfolio-project number="01" variant="walk" href="https://armd-02.github.io/mapmaker/" meta="Map utility / 2020—" tech="JavaScript · MapLibre" project-title="まち歩きマップメーカー" description="イベントやフィールドワーク向けに、自由に加工・利用できる地図画像をブラウザで作成するツール。" cta="地図をつくる"></portfolio-project>
-        <portfolio-project number="02" variant="playground" href="https://armd-02.github.io/Playgrounds" meta="Park map" tech="OSM · Wikimedia" project-title="遊具のある公園マップ" description="ブランコ、すべり台、砂場など、遊具の種類から公園を探せる地図。親子のお出かけ先選びを、オープンデータでお手伝いします。" cta="公園を探す"></portfolio-project>
-        <portfolio-project number="03" variant="change" href="https://armd-01.sakura.ne.jp/whatsnew/" meta="Data visualization / 2026" tech="JavaScript · PHP · MariaDB" project-title="OSM What’s New Japan" description="日本のOpenStreetMapで「どこが、どう変わったか」を地図とレポートで可視化。日々の編集から地域の変化を発見できます。" cta="変化を見る"></portfolio-project>
+        <portfolio-project number="01" variant="walk" href="https://armd-02.github.io/mapmaker/" meta="Map utility / 2020—" tech="JavaScript · MapLibre" project-title="まち歩きマップメーカー" description="地域を歩いて得た発見を、誰でも書き込み、伝えられるように。自由に加工・利用できる地図画像をブラウザで作成するツールです。" cta="地図をつくる"></portfolio-project>
+        <portfolio-project number="02" variant="playground" href="https://armd-02.github.io/Playgrounds" meta="Park map" tech="OSM · Wikimedia" project-title="遊具のある公園マップ" description="OpenStreetMapとWikimediaに蓄積された遊具の情報を、親子のお出かけに活かす地図。ブランコやすべり台など、遊具の種類から公園を探せます。" cta="公園を探す"></portfolio-project>
+        <portfolio-project number="03" variant="change" href="https://armd-01.sakura.ne.jp/whatsnew/" meta="Data visualization / 2026" tech="JavaScript · PHP · MariaDB" project-title="OSM What’s New Japan" description="日本のOpenStreetMapで「どこが、どう変わったか」を可視化。共同編集の積み重ねを見える形にし、地域の発見や次の調査・改善につなげます。" cta="変化を見る"></portfolio-project>
         <portfolio-project number="04" variant="time" href="https://armd-02.github.io/TimeMapTravel_Japan/" meta="History map / Japan" tech="OpenStreetMap · Open data" project-title="少し昔の地図を見てみよう" description="過去のOpenStreetMapと現在の地図を見比べながら、まちや地域がどのように変化してきたかをたどれます。" cta="変化をたどる"></portfolio-project>
         <portfolio-project number="05" variant="expo" href="https://k-sakanoshita.github.io/expo2025-maniacs/" meta="Past project / 2025" tech="Open data · Community" project-title="万博マニアックマップ" description="大阪・関西万博をもっと深く楽しむための、会場内外の個性的な見どころを集めたプロジェクト。開催期間中の発見と体験を共有しました。" cta="記録を見る"></portfolio-project>
-        <portfolio-project number="06" variant="memories" href="https://armd-02.github.io/OsakaMemories/" meta="Memories / Osaka" tech="Open data · Community" project-title="大阪思い出のこしマップ" description="市民の思い出と地域の記録を地図の上に残し、場所とともに読み継いでいくプロジェクトです。" cta="思い出をたどる"></portfolio-project>
+        <portfolio-project number="06" variant="memories" href="https://armd-02.github.io/OsakaMemories/" meta="Memories / Osaka" tech="Open data · Community" project-title="大阪思い出のこしマップ" description="個人の中にある大阪の思い出を、みんなでたどれる地域の記録へ。市民の記憶を地図の上に残し、場所とともに次へ読み継ぐプロジェクトです。" cta="思い出をたどる"></portfolio-project>
         <portfolio-project number="07" variant="heritage" href="https://nagahama.net/jyoukamachi/" meta="Local heritage map" tech="OSM · Community" project-title="長浜城下町遺産マップ" description="市民が見つけた城下町の面影を「長浜城下町遺産」として紹介。地域の歴史を歩いてたどれるWebマップです。" cta="地図を歩く"></portfolio-project>
       </div>
 
@@ -300,6 +308,7 @@
         <div class="profile-anchor reveal" aria-label="プロフィール">
           <h3>坂ノ下 勝幸 <span>/ Katsuyuki Sakanoshita</span></h3>
           <p class="profile-role">オープンデータ実践者</p>
+          <p class="profile-focus">OpenStreetMapを中心に、地域の情報を誰もが利用できる形で残す活動を続けています。その実践はWikimedia、Webアプリ開発、地域活動、教育へと広がっています。</p>
           <ul>
             <li>大阪情報コンピュータ専門学校 講師</li>
             <li>OpenStreetMap Foundation Japan 副理事</li>
@@ -307,7 +316,7 @@
             <li>Wikimedians of Japan User Group</li>
           </ul>
         </div>
-        <p class="activity-description">開発したアプリを地域の現場へ持ち出し、ワークショップや日々の活動を通じて、参加する人とともにデータをつくり、使う場を育てています。講演や記事、アプリの開発と活用など、技術と実践を往復しつつ、地域やまちに残るものを作ろうとあがいています。ここで紹介したほかにも、さまざまなコミュニティに関わっています。</p>
+        <p class="activity-description">オープンなデータは、現場に出ることで豊かになります。まちを歩き、地域の人から話を聞き、情報を記録する。そこで得た情報をOpenStreetMapやWikimediaなどへ残し、また地域で使える形にして返す。そんな循環を各地のコミュニティと続けています。</p>
       </div>
       <ul class="activity-list community-list">
         <li class="activity-item reveal">

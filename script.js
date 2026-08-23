@@ -15,7 +15,7 @@ class PortfolioProject extends HTMLElement {
       viewer: `<div class="viewer-window"><span></span><span></span><span></span><i></i><i></i><i></i></div>`,
       tiles: `<div class="tiles-stack"><span></span><span></span><span></span><i>PM</i></div>`,
       community: `<img src="https://k-sakanoshita.github.io/community_mapmaker/image/cMapmaker.png" alt="" loading="lazy">`,
-      walk: `<img src="https://armd-02.github.io/mapmaker/image/mapmaker.png" alt="" loading="lazy">`
+      walk: `<img src="https://armd-02.github.io/mapmaker/image/ogimage.png" alt="" loading="lazy">`
     };
 
     this.classList.add("project-card", "reveal");
