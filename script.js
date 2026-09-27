@@ -1,68 +1,61 @@
-class PortfolioProject extends HTMLElement {
-  connectedCallback() {
-    if (this.dataset.ready) return;
-    this.dataset.ready = "true";
+const menuButton = document.querySelector('.menu-toggle');
+const navigation = document.querySelector('.site-nav');
 
-    const variant = this.getAttribute("variant");
-    const title = this.getAttribute("project-title");
-    const visuals = {
-      playground: `<img src="https://armd-02.github.io/Playgrounds/image/ogimage.png" alt="" loading="lazy">`,
-      time: `<img src="https://armd-02.github.io/TimeMapTravel_Japan/image/thumbnail.png" alt="" loading="lazy">`,
-      heritage: `<img src="https://armd-02.github.io/NagahamaJyoukamachi/image/ogimage.png" alt="" loading="lazy">`,
-      memories: `<img src="https://armd-02.github.io/OsakaMemories/image/splash.png" alt="" loading="lazy">`,
-      expo: `<img src="https://k-sakanoshita.github.io/expo2025-maniacs/image/ogimage.png" alt="" loading="lazy">`,
-      change: `<img src="https://armd-01.sakura.ne.jp/whatsnew/image/whatsnew.png" alt="" loading="lazy">`,
-      viewer: `<div class="viewer-window"><span></span><span></span><span></span><i></i><i></i><i></i></div>`,
-      tiles: `<div class="tiles-stack"><span></span><span></span><span></span><i>PM</i></div>`,
-      community: `<img src="https://k-sakanoshita.github.io/community_mapmaker/image/cMapmaker.png" alt="" loading="lazy">`,
-      walk: `<img src="https://armd-02.github.io/mapmaker/image/ogimage.png" alt="" loading="lazy">`
-    };
-
-    this.classList.add("project-card", "reveal");
-    this.innerHTML = `
-      <a href="${this.getAttribute("href")}" target="_blank" rel="noreferrer" aria-label="${title}を開く">
-        <div class="project-visual ${variant}-visual">
-          ${visuals[variant]}
-          <span class="project-number">${this.getAttribute("number")}</span>
-        </div>
-        <div class="project-body">
-          <div class="project-meta"><span>${this.getAttribute("meta")}</span><span>${this.getAttribute("tech")}</span></div>
-          <h3>${title}</h3>
-          <p>${this.getAttribute("description")}</p>
-          <span class="project-link">${this.getAttribute("cta")} <b aria-hidden="true">↗</b></span>
-        </div>
-      </a>`;
-  }
-}
-
-customElements.define("portfolio-project", PortfolioProject);
-
-const menuButton = document.querySelector(".menu-toggle");
-const navigation = document.querySelector(".site-nav");
-
-menuButton?.addEventListener("click", () => {
-  const isOpen = menuButton.getAttribute("aria-expanded") === "true";
-  menuButton.setAttribute("aria-expanded", String(!isOpen));
-  navigation.classList.toggle("is-open", !isOpen);
-  document.body.style.overflow = isOpen ? "" : "hidden";
+menuButton?.addEventListener('click', () => {
+  const isOpen = menuButton.getAttribute('aria-expanded') === 'true';
+  menuButton.setAttribute('aria-expanded', String(!isOpen));
+  navigation.classList.toggle('is-open', !isOpen);
+  menuButton.querySelector('.sr-only').textContent = isOpen ? 'メニューを開く' : 'メニューを閉じる';
 });
 
-navigation?.addEventListener("click", (event) => {
-  if (!event.target.closest("a")) return;
-  menuButton.setAttribute("aria-expanded", "false");
-  navigation.classList.remove("is-open");
-  document.body.style.overflow = "";
+navigation?.addEventListener('click', (event) => {
+  if (!event.target.closest('a')) return;
+  menuButton.setAttribute('aria-expanded', 'false');
+  menuButton.querySelector('.sr-only').textContent = 'メニューを開く';
+  navigation.classList.remove('is-open');
 });
 
-const observer = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (!entry.isIntersecting) return;
-      entry.target.classList.add("is-visible");
-      observer.unobserve(entry.target);
+window.addEventListener('keydown', (event) => {
+  if (event.key !== 'Escape' || !navigation?.classList.contains('is-open')) return;
+  menuButton.setAttribute('aria-expanded', 'false');
+  menuButton.querySelector('.sr-only').textContent = 'メニューを開く';
+  navigation.classList.remove('is-open');
+  menuButton.focus();
+});
+
+const yearTabs = Array.from(document.querySelectorAll('.year-tabs [role="tab"]'));
+const yearTabList = document.querySelector('.year-tabs');
+
+if (yearTabList && yearTabs.length) {
+  const selectYear = (selectedTab) => {
+    yearTabs.forEach((tab) => {
+      const selected = tab === selectedTab;
+      const panel = document.getElementById(tab.getAttribute('aria-controls'));
+      tab.setAttribute('aria-selected', String(selected));
+      tab.tabIndex = selected ? 0 : -1;
+      if (panel) panel.hidden = !selected;
     });
-  },
-  { threshold: 0.12 }
-);
+  };
 
-document.querySelectorAll(".reveal").forEach((element) => observer.observe(element));
+  selectYear(yearTabs[0]);
+  yearTabList.classList.add('is-ready');
+
+  yearTabList.addEventListener('click', (event) => {
+    const tab = event.target.closest('[role="tab"]');
+    if (tab && yearTabList.contains(tab)) selectYear(tab);
+  });
+
+  yearTabList.addEventListener('keydown', (event) => {
+    const currentIndex = yearTabs.indexOf(event.target);
+    if (currentIndex < 0) return;
+    let nextIndex;
+    if (event.key === 'ArrowRight') nextIndex = (currentIndex + 1) % yearTabs.length;
+    else if (event.key === 'ArrowLeft') nextIndex = (currentIndex - 1 + yearTabs.length) % yearTabs.length;
+    else if (event.key === 'Home') nextIndex = 0;
+    else if (event.key === 'End') nextIndex = yearTabs.length - 1;
+    else return;
+    event.preventDefault();
+    selectYear(yearTabs[nextIndex]);
+    yearTabs[nextIndex].focus();
+  });
+}
