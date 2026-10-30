@@ -46,6 +46,7 @@ h1 span { display: block; margin-top: .15rem; color: var(--muted); font-size: .4
 .reference-row h3 a { text-decoration: none; }
 .reference-row h3 a:hover { text-decoration: underline; }
 .reference-row h3 span { font-size: .85em; }
+.reference-row h3 .featured-label { display: inline-block; margin-left: .5rem; padding: .05rem .42rem; border: 1px solid var(--line); border-radius: 2rem; color: var(--orange); font-size: .63rem; font-weight: 700; letter-spacing: .03em; vertical-align: middle; }
 .reference-row p { margin: .2rem 0 0; color: var(--muted); font-size: .84rem; line-height: 1.65; }
 .reference-row .reference-meta { margin: .12rem 0 0; font-size: .73rem; line-height: 1.6; }
 .subheading { margin: 2rem 0 .8rem; color: var(--green); font-size: 1.05rem; }
@@ -58,13 +59,9 @@ h1 span { display: block; margin-top: .15rem; color: var(--muted); font-size: .4
 .archive-year li a { display: flex; justify-content: space-between; gap: .5rem; font-size: .88rem; font-weight: 600; text-decoration: none; }
 .archive-year li a:hover { text-decoration: underline; }
 .archive-year li p { margin: 0; color: var(--muted); font-size: .75rem; }
-.profile-summary { padding: 1.15rem 1.4rem; margin-bottom: 2rem; border-left: 3px solid var(--green); background: var(--surface); }
-.profile-summary h3 { margin: 0; font-size: 1rem; }
-.profile-summary h3 span { color: var(--muted); font-size: .85rem; font-weight: 500; }
-.profile-summary p { margin: .35rem 0; font-size: .88rem; }
-.profile-summary ul { display: flex; flex-wrap: wrap; gap: .15rem 1.5rem; margin: .55rem 0 0; padding-left: 1.2rem; color: var(--muted); font-size: .78rem; }
 .community-row { padding: .95rem 0; border-bottom: 1px solid var(--line); }
 .community-row h3 { margin: 0; font-size: .95rem; }
+.community-role { margin-left: .45rem; color: var(--muted); font-size: .76rem; font-weight: 500; white-space: nowrap; }
 .community-row p { margin: .18rem 0 0; color: var(--muted); font-size: .82rem; }
 .community-row .community-channels { font-size: .73rem; }
 .year-tabs { display: none; gap: .35rem; margin: 0 0 1.5rem; border-bottom: 1px solid var(--line); }
